@@ -23,8 +23,6 @@ logs
 *.log
 
 # Distribution
-dist/
-build/
 coverage/
 .nyc_output/
 
