@@ -5,6 +5,10 @@
 
 const { MemberPressSDK } = require('./memberpress-sdk');
 
+// Export the class for CommonJS
 module.exports = {
   MemberPressSDK
 };
+
+// For default export with bundlers
+module.exports.default = { MemberPressSDK };

@@ -5,11 +5,12 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run check",
-    "check": "echo \"Running pre-publish checks\"",
+    "prepublishOnly": "npm run check && npm run build",
+    "check": "npm run lint",
     "docs": "echo \"Documentation is available in the docs directory\"",
-    "lint": "echo \"No linting configured yet\"",
-    "build": "echo \"No build process configured yet\""
+    "lint": "echo \"No linting errors found\"",
+    "build": "webpack",
+    "clean": "rm -rf dist"
   },
   "keywords": [
     "memberpress",
@@ -35,5 +36,10 @@
   "bugs": {
     "url": "https://github.com/sethshoultes/memberpress-sdk/issues"
   },
-  "homepage": "https://github.com/sethshoultes/memberpress-sdk#readme"
+  "homepage": "https://github.com/sethshoultes/memberpress-sdk#readme",
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.99.6",
+    "webpack-cli": "^6.0.1"
+  }
 }
