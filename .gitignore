@@ -27,3 +27,6 @@ dist/
 build/
 coverage/
 .nyc_output/
+
+# NPM package files
+*.tgz
