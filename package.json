@@ -4,7 +4,7 @@
   "description": "JavaScript SDK for the MemberPress REST API",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"No tests implemented yet\" && exit 0",
     "prepublishOnly": "npm run check && npm run build",
     "check": "npm run lint",
     "docs": "echo \"Documentation is available in the docs directory\"",
